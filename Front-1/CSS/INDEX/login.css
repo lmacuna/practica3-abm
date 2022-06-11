@@ -1,0 +1,172 @@
+body{
+    height: 100vh;
+}
+.form-login{
+    width: 30%;
+    /* border:2px solid limegreen; */
+    height:42vh;
+    margin: auto;
+    margin-top:50px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px limegreen,
+    0 0 20px limegreen,
+    0 0 40px limegreen;
+    background: black;
+  
+}
+
+
+
+/* ERRORES */
+
+.form-error{
+    color: red !important;
+    box-shadow: 0 0 10px red,
+    0 0 20px red,
+    0 0 40px red !important;
+}
+.login-error{
+    text-shadow:0 0 4px red,
+    0 0 8px red,
+    0 0 16px red !important;
+}
+.btn-login-error{
+    border:2px solid red !important;
+    box-shadow: 0 0 2px red,
+    0 0 4px red,
+    0 0 8px red !important;
+}
+.titulo-app-error{
+    text-shadow:0 0 4px red,
+     0 0 8px red,
+      0 0 16px red !important;
+}
+.input-login-error{
+    background: rgb(255, 69, 69) !important;
+}
+.body-error{
+    border:4px solid red !important;
+}
+
+
+
+
+
+
+
+.input-login{
+    width:60%;
+    height: 13%;
+    margin: auto;
+    margin-top:20px;
+    text-align: center;
+    font-style:oblique;
+    font-weight:bold;
+    display: block;
+    background: rgb(103, 201, 103);
+    color: darkred;
+    font-size:18px;
+    text-shadow: 1.5px 1.5px 1.5px black;
+   
+}
+.input-login:hover{
+    background: white;
+   
+}
+.btn-login{
+    cursor: pointer;
+    width: 25%;
+    height:15%;
+    background: black;
+    color: white;
+    border:2px solid limegreen;
+  /*   box-shadow: 0 0 2px white,
+    0 0 4px white,
+    0 0 8px white; */
+    display: block;
+    margin: auto;
+    margin-top:40px;
+    font-weight:bold;
+    font-style: oblique;
+    text-shadow: 1px 1px 1px black;
+}
+.btn-login:hover{
+    background: white;
+    box-shadow: 0 0 2px limegreen,
+    0 0 4px limegreen,
+    0 0 8px limegreen;
+    color: black;
+}
+.btn-login:active{
+    background: white;
+    box-shadow: 0 0 10px limegreen,
+    0 0 20px limegreen,
+     0 0 60px limegreen;
+}
+.titulo-login{
+    font-style: oblique;
+    margin-bottom: 20px;
+    color:black;
+    text-shadow:0 0 4px limegreen,
+    0 0 8px limegreen,
+    0 0 16px limegreen;
+}
+.titulo-login:hover{
+    color: white;
+}
+
+@media (max-width:952px){
+
+    .form-login{
+        width:35%;
+    }
+    .titulo-login{
+        font-size: 18px;
+    }
+}
+@media (max-width:800px){
+    .form-login{
+        width: 40%;
+    }
+    .btn-login{
+        width: 27%;
+        font-size: 12px !important;
+    }
+    
+}
+@media (max-width:700px){
+    .form-login{
+        width: 45%;
+    }
+    .input-login{
+        width:70% !important;
+    }
+    .btn-login{
+        width: 25%;
+        font-size: 11px !important;
+    }
+}
+@media (max-width:600px){
+    .form-login{
+        width: 50%;
+    }
+}
+@media (max-width:500px){
+    .form-login{
+        width: 60%;
+    }
+    .titulo-login{
+        font-size: 16px;
+    }
+   
+}
+@media (max-width:400px){
+    .form-login{
+        width: 70%;
+    }
+    .titulo-login{
+        font-size:14px;
+    }
+}

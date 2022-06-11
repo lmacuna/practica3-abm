@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(30, 83, 255);
+    overflow: scroll;
+}
+.head-edicion{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border:2px solid black;
+}
+.titulo-app{
+    color: white;
+}
+.titulo-edicion{
+    line-height: 50px;
+    color: white;
+}
+ a{
+     color:white;
+    margin:20px; 
+    font-weight:bold;
+} 
+a:hover{
+    color:black;
+    text-shadow:1px 1px 1px crimson;
+  
+}
+a:active{
+    color: orangered;
+    text-shadow:1px 1px 1px black;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    margin-top:60px;
+    transition: all 2.9s;
+    margin-bottom: 30px;
+}
+.item-edicion{
+    width: 98%;
+    border:1px solid black;
+ /*    border-top:1px solid blue; */
+    height:9vh;
+    margin-top: 2px !important;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    background: blue;
+    transition: all 0.9s;
+   
+}
+.item-edicion:hover{
+transition: all 0.9s;
+
+background: rgb(30, 83, 255);
+
+}
+
+.btn-vistas{
+    height: 22px;
+    width: 60px;
+    margin: 10px;
+    background: #333;
+    color: white;
+    border:none;
+    font-size: 11px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 2px black,
+    0 0 4px black,
+    0 0 6px black;
+}
+.btn-vistas:hover{
+    background:rgb(83, 83, 83);
+    box-shadow: 0 0 1px blue,
+    0 0 2px blue,
+    0 0 4px blue;
+    transition: all 0.5s;
+}
+.btn-vistas:active{
+    background:burlywood;
+    color: darkblue;
+    box-shadow: 0 0 2px crimson,
+    0 0 4px crimson,
+    0 0 8px crimson;
+    transition: all 0.2s;
+}
+p{
+  /*  border-bottom:1px dashed black; */
+    margin: auto;
+    width: 16%;
+    margin-top: 20px;
+    color: white;
+    font-style:oblique !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow:1px 1px 1px black;
+ 
+}
+.ingresos{
+    width: 98%;
+    border:1px solid black;
+ /*    border-top:1px solid blue; */
+    height:9vh;
+    margin-top: 2px !important;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    background:rgb(255, 79, 15);
+    transition: all 0.9s;
+    cursor: pointer;
+}
+.ingresos:hover{
+    background:rgb(255, 115, 64);
+    transition: all 0.9s;
+  /*   box-shadow: 0 0 2px limegreen,
+    0 0 4px limegreen,
+    0 0 8px limegreen; */
+}
+.egresos{
+    width: 98%;
+    border:1px solid black;
+ /*    border-top:1px solid blue; */
+    height:9vh;
+    margin-top: 2px !important;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    display: flex;
+   
+    transition: all 0.9s;
+    cursor: pointer;
+    /* background:rgb(235, 79, 235); */
+    background:rgb(255, 62, 28);
+}
+.egresos:hover{
+    transition: all 0.9s;
+    /* background:violet; */
+    background: tomato;
+   /*  box-shadow: 0 0 2px limegreen,
+    0 0 4px limegreen,
+    0 0 8px limegreen; */
+}
+.btn-registros{
+    height: 40px;
+    width: 80px;
+    background: black;
+    color:limegreen;
+    border: 0.5px solid limegreen;
+   
+    margin: auto;
+    cursor: pointer;
+}
+.btn-registros:hover{
+    background: grey;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 0 0 2px white,
+    0 0 4px white,
+    0 0 6px white;
+    
+}
+.btn-registros:active{
+    background: white;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 60px white;
+    color:black;
+    
+}
+.p-concepto{
+    width: 30%;
+}
+.tipo{
+    display: none;
+    text-align: center;
+}
+.btn-delete{
+    background: red;
+    color:white;
+    border: none;
+    margin: 2px;
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.btn-delete:hover{
+    background: lightcoral;
+    color:darkblue;
+    transition: all 0.9s;
+}
+.btn-delete:active{
+    background: grey;
+    color: black;
+}
+.btn-edit-modif{
+    background: orangered;
+    color:white;
+    border: none;
+    margin: 2px;
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.btn-edit-modif:hover{
+    background: lightcoral;
+    color:darkblue;
+    transition: all 0.9s;
+}
+.btn-edit-modif:active{
+    background: grey;
+    color: black;
+}
+.body-oscuro{
+    background: rgb(30, 83, 255);
+}
+@media (max-width:920px){
+    .titulo-edicion{
+        font-size: 18px;
+    }
+    p{
+        font-size:13px;
+        width: 25%;
+    }
+    .p-id{
+        display:none;
+    }
+    .btn-registros{
+        font-size:13px;
+        height: 37px;
+        width: 75px;
+    }
+}
+@media (max-width:700px){
+    .p-fecha{
+        display: none;
+    }
+    p{
+        width: 33%;
+    }
+}
+@media (max-width:600px){
+    p{
+        font-size: 12px;
+    }
+    .btn-registros{
+        font-size:12px;
+        height: 35px;
+        width: 73px;
+    }
+}
+@media (max-width:530px){
+    .titulo-edicion{
+        font-size: 16px;
+    }
+    p{
+        font-size: 11px;
+    }
+    .btn-registros{
+        font-size:11px;
+        height: 33px;
+        width: 70px;
+    }
+    .item-edicion{
+        height: 60px !important;
+    }
+    .egresos{
+        height: 60px !important;
+    }
+    .ingresos{
+        height: 60px !important;
+    }
+}
+@media (max-width:400px){
+    .titulo-edicion{
+        font-size: 14px;
+    }
+    .item-edicion{
+        height:70px !important;
+    }
+    .ingresos{
+        height:70px !important;
+    }
+    .egresos{
+        height:70px !important;
+    }
+    .btn-registros{
+       height: 27px;
+        width: 60px;
+    }
+    a{
+        margin-bottom: 10px !important;
+    }
+    .btn-vistas{
+        display:block;
+        margin-bottom:5px !important;
+        margin: auto;
+        font-size: 11px;
+        width: 98%;
+        transition: all 0.5s;
+        height: 25px;
+    
+    }
+    .vistas{
+        margin-top: 10px;
+    }
+    .p-tipo{
+        display: none;
+    }
+  
+}
+@media (max-width:300px){
+      .item-edicion{
+          height:80px !important;
+      }
+      .ingresos{
+        height:80px !important;
+    }
+    .egresos{
+        height:80px !important;
+    }
+      
+      a{
+          font-size: 14px;
+      }
+      .btn-registros{
+       height: 25px;
+        width: 50px;
+    }
+    .btn-delete{
+        width: 50px;
+        height:auto;
+        font-size: 10px;
+    }
+   
+    .btn-edit-modif{
+        width: 43px;
+        font-size: 10px;
+    }
+    
+    
+    
+}
+@media (max-width:260px){
+    .p-tipo{
+        display: none;
+    }
+    .tipo{
+        display:block;
+        /* margin-left: 80px; */
+    }
+}
+
+
+@media (max-height:400px){
+    .item-edicion{
+        height:80px !important;
+    }
+    .ingresos{
+      height:80px !important;
+  }
+  .egresos{
+      height:80px !important;
+  }
+}

@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background: white;
+    
+}
+.head-home{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border:2px solid black;
+}
+.titulo-home{
+    line-height: 50px;
+   
+}
+a{
+     color:darkblue;
+    margin:20px;
+    font-weight: bold;
+}
+a:hover{
+    color:black;
+    text-shadow:1px 1px 1px crimson;
+  
+}
+a:active{
+    color: orangered;
+    text-shadow:1px 1px 1px black;
+}
+.main{
+    width: 100%;
+   /*  height: 62vh; */
+    height: auto;
+    border:1px solid black;
+    display: flex;
+    margin-top:50px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#root{
+    width:50%;
+    border:1px solid black; 
+    height:60vh;
+    margin: auto;
+    background: orangered;
+    transition: all 0.9s;
+    box-shadow: 0px 0px 2px black,
+    0 0 4px black,
+    0 0 8px black;
+  
+}
+
+.form{
+    width: 30%;
+    height: 60vh;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: darkblue;
+    transition: all 0.9s;
+    box-shadow: 0px 0px 2px black,
+    0 0 4px black,
+    0 0 8px black;
+}
+.input-insert{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+    height: 40px;
+    text-align:center;
+    font-style:oblique;
+    font-weight:bold;
+}
+.btn-insert{
+    background: black;
+    color:limegreen;
+    font-style: oblique;
+    margin-top: 30px;
+    width: 23%;
+    height: 10%;
+    cursor: pointer;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 2px 2px black;
+    border:0.5px solid limegreen;
+}
+.btn-insert:hover{
+    background: grey;
+    border:1px solid white;
+    box-shadow: 0 0 2px white,
+    0 0 4px white,
+    0 0 8px white;
+}
+.btn-insert:active{
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 60px white;
+}
+.item-registro{
+    display: flex;
+    border-bottom:1px solid grey;
+    height: 38px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-style: oblique;
+    font-size: 15px;
+    background: orangered;
+    color:black;
+    font-weight: bold;
+    transition: all 0.9s;
+
+}
+.campo-concepto{
+    margin-right: auto;
+    line-height: 40px;
+    width: 45%;
+    
+   
+}
+.campo-monto{
+    float: right;
+    line-height: 40px;
+    width: 20%;
+  
+    text-align: center;
+    
+}
+.campo-tipo{
+   float: right;
+   line-height: 40px;
+   margin-right: 50px;
+   width: 20%;
+  
+   
+   
+}
+#totales{
+    width: 100%;
+ text-align: center;
+}
+#total-ingresos{
+    display: inline-block;
+    margin: 20px;
+    font-style: oblique;
+}
+#total-egresos{
+    display: inline-block;
+    margin: 20px;
+    font-style: oblique;
+}
+#saldo{
+    display: inline-block;
+    margin: 20px;
+    font-size:22px;
+    font-style: oblique;
+}
+.rojo{
+    color:red !important;
+}
+.naranja{
+    color:orangered !important;
+}
+
+.estado-rojo{
+    background: red;
+  
+}
+.estado-azul{
+    background:blue;
+   
+}
+.estado-naranja{
+    background: orangered;
+    
+}
+.estado{
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    font-weight:bold;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:11px;
+    box-shadow:0 0 2px black,
+    0 0 4px black,
+    0 0 8px black;
+    transition: all 0.9s;
+}
+
+@media (max-width:952px){
+    .main{
+        display: block;
+        
+    }
+    #root{
+        margin-top:30px;
+        width: 65%;
+    }
+    .form{
+        width: 65%;
+    }
+    .input-insert{
+        width: 60%;
+    }
+}
+@media (max-width:800px){
+    .campo-concepto{
+        width:52%;
+    }
+}
+@media(max-width:700px){
+    .input-insert{
+        width: 70%;
+        height: 35px;
+    }
+    .campo-monto{
+        width: 18%;
+        font-size: 14px;
+    }
+    .campo-tipo{
+        width: 18%;
+        font-size: 14px;
+    }
+    .campo-concepto{
+        width:58%;
+        font-size: 14px;
+    }
+}
+@media (max-width:650px){
+    #root{
+        width:70%;
+    }
+    .form{
+        width:70%;
+    }
+    .btn-insert{
+        font-size: 12px;
+        width: 22%;
+    }
+    .campo-concepto{
+        font-size: 12px !important;
+    }
+    .campo-monto{
+       font-size: 12px !important;
+    }
+    .campo-tipo{
+        display: none;
+        font-size: 12px !important;
+    }
+}
+@media (max-width:500px){
+    #root{
+        width:80%;
+    }
+    .form{
+        width:80%;
+    }
+    .input-insert{
+        width: 80%;
+        height: 30px;
+        font-size: 11px;
+    }
+    .btn-insert{
+        width: 25%;
+    }
+    .campo-concepto{
+        width:60%;
+    }
+}
+@media (max-width:400px){
+    #root{
+        width:89%;
+    }
+    .form{
+        width:89%;
+    }
+    .input-insert{
+        width: 85%;
+    }
+    .btn-insert{
+        width: 28%;
+    }
+    .campo-concepto{
+        font-size: 11px !important;
+    }
+    .campo-monto{
+       font-size: 11px !important;
+    }
+    .campo-tipo{
+       font-size: 11px !important;
+    }
+    .estado{
+       width: 98%;
+       margin: auto;
+       margin-bottom: 5px;
+       display: block;
+       height:25px;
+       transition: all 0.9s;
+    }
+    #totales{
+        margin-top: 10px;
+    }
+    /* span{
+        display: none;
+    } */
+}
+@media (max-width:350px){
+    #root{
+        width:96%;
+    }
+    .form{
+        width:96%;
+    }
+    .input-insert{
+        width: 94%;
+    }
+    .btn-insert{
+        width: 33%;
+    }
+    .campo-concepto{
+        width: 65%;
+    }
+    .campo-monto{
+        width: 25%;
+    }
+}
+@media (max-width:300px){
+    a{
+        font-size: 14px;
+    }
+}
+@media (max-width:297px){
+    .main{
+        padding: 0%;
+        padding-bottom: 20px;
+    }
+    #root{
+        width:98%;
+    }
+    .form{
+        width:98%;
+    }
+    .input-insert{
+        width: 98%;
+    }
+    .btn-insert{
+        width: 37%;
+    }
+}
+@media (max-width:260px){
+    .main{
+        padding-bottom: 20px;
+    }
+    #root{
+        width:100%;
+        margin-bottom: 30px !important;
+    }
+    .form{
+        width:100%;
+    }
+    .input-insert{
+        width: 98%;
+    }
+    .btn-insert{
+        width: 37%;
+    }
+}
+
